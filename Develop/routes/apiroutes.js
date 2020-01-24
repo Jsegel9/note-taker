@@ -12,7 +12,11 @@ module.exports = function(app){
             })
     });
     app.post("/api/notes", function(req,res){
+        fs.appendFile("Develop/db/db.json", req.body)
       console.log(req.body)  
       res.send("saved")
+    })
+    app.delete("/api/notes/:id", function(req, res){
+        console.log("deleting");
     })
 }

@@ -2,9 +2,9 @@ var express = require('express');
 var htmlRoutes = require("./Develop/routes/htmlroutes");
 var apiRoutes = require("./Develop/routes/apiroutes");
 // var index = require("./Develop/public/assets/js/index");
-var addRequestId = require('express-request-id')();
+// var addRequestId = require('express-request-id')();
  
-app.use(addRequestId);
+// app.use(addRequestId);
 
 var app = express();
 var PORT = process.env.PORT || 8080;
